@@ -12,3 +12,8 @@
 python manage.py runserver
 
 source myenv/bin/activate
+
+
+현재 진행상황
+
+2장 끝까지 끝
