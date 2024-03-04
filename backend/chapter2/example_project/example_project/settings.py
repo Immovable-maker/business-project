@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework", # Rest 프레임워크를 사용할 것임을 명시
+    "example_app", # 내가 만든 앱 넣어놓기
+    "example_app_orm", # 내가 만든 앱 넣어놓기
+    
 ]
 
 MIDDLEWARE = [
