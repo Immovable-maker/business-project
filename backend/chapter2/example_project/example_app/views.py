@@ -1,4 +1,4 @@
-# from django.shortcuts import render
+from django.shortcuts import render
 
 # # Create your views here.
 
@@ -12,3 +12,12 @@ from rest_framework.response import Response
 def hello_rest_api(request):
     data = {'message': 'Hello, REST API!'}
     return Response(data)
+
+
+def home(request):
+   data = {
+       'name': 'John Doe',
+       'age': 25,
+       'country': 'USA'
+   }
+   return render(request, 'myapp/home.html', context=data)
