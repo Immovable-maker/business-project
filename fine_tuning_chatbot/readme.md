@@ -62,5 +62,7 @@ npm install로 종속성 설치하고 npm run dev로 실행
 이거 고쳤음 backend에서 CORS 오류 때문에 안되는것 같길래
 https://velog.io/@lob3767/Django-CORS-%EC%84%A4%EC%A0%95
 
+---
+
 
 

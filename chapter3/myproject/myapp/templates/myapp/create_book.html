@@ -1,6 +1,12 @@
 <h2>책 생성하기</h2>
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
 <form method="post">
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit">저장</button>
+  <p>BASE URL : {{ base_url }}</p>
 </form>

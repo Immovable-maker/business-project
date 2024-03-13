@@ -116,8 +116,28 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-
 STATIC_URL = "static/"
+# 추가했음
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# In local server,
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+# 프로덕션 서버에서는,
+# STATICFILES_DIRS = []
+
+# 스태틱 파일들 (CSS, JavaScript, Images)
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# python manage.py collectstatic 돌려서 staticfiles에 파일들을 수집한대요.
+
+
+# 추가했음
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
