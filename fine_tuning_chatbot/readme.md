@@ -64,5 +64,5 @@ https://velog.io/@lob3767/Django-CORS-%EC%84%A4%EC%A0%95
 
 ---
 
-
-
+python manage.py createsuperuser
+로 슈퍼 유저 생성
